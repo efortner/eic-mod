@@ -15,7 +15,7 @@ import net.minecraft.client.gui.screen.TitleScreen;
 public class TitleScreenMixin {
 	@Shadow
 	@Getter
-	private String splashText = "";
+	private String splashText;
 	
 	@Inject(at = @At("HEAD"), method = "init()V")
 	public void init(final CallbackInfo info) {
